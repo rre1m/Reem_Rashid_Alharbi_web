@@ -1,0 +1,84 @@
+/* ===== main.css (Lab 5) ===== */
+body {
+    font-family: "Times New Roman", serif;
+}
+
+/* ---------- Task 1: links ---------- */
+/* class selector: shared by all three links */
+.qu-link {
+    display: block;          /* each link fills the whole row */
+    padding: 20px;
+    text-align: center;
+    font-size: 20px;
+    color: white;
+    background-color: #555555;
+}
+
+/* id selector: only the first link */
+#link-new-tab {
+    background-color: #adf2c0;
+}
+
+.dark-gray { background-color: #555555; }
+.black     { background-color: black; }
+
+/* link states (order matters: link, visited, hover, active) */
+.qu-link:link    { color: white; }
+.qu-link:visited { color: gold; }
+.qu-link:hover   { color: red; }
+.qu-link:active  { color: orange; }
+
+/* first link sits on a light background, so use a dark color for its normal state */
+#link-new-tab:link { color: darkgreen; }
+#link-new-tab:hover { color: red; }
+#link-new-tab:active { color: orange; }
+
+/* ---------- Task 2: formatting tags ---------- */
+.format-title {
+    color: green;
+    background-color: beige;
+    padding: 10px;
+}
+
+p {
+    font-family: verdana;
+    font-size: 20px;
+}
+
+/* ---------- Task 3: listing ---------- */
+.list-title {
+    color: white;
+    background-color: cadetblue;
+    padding: 10px;
+}
+
+/* ---------- Task 4: tables ---------- */
+table {
+    margin-left: auto;
+    margin-right: auto;      /* center the tables */
+}
+
+table.fruits caption {
+    font-weight: bold;
+}
+
+table.fruits th,
+table.fruits td:first-child {
+    text-align: center;
+}
+
+table.camels {
+    width: 70%;
+    border-collapse: collapse;
+}
+
+table.camels th,
+table.camels td {
+    border: 1px solid black;
+    text-align: center;
+}
+
+table.camels img {
+    display: block;
+    margin: 0 auto;
+}
