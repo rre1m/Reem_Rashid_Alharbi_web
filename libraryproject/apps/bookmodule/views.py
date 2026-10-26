@@ -22,3 +22,20 @@ def viewbook(request, bookId):
 
 def aboutus(request):
     return render(request, 'bookmodule/aboutus.html')
+
+
+# ---------------- Lab 5 ----------------
+def links_page(request):
+    return render(request, 'bookmodule/lab5/links.html')
+
+
+def text_formatting(request):
+    return render(request, 'bookmodule/lab5/text_formatting.html')
+
+
+def listing_page(request):
+    return render(request, 'bookmodule/lab5/listing.html')
+
+
+def tables_page(request):
+    return render(request, 'bookmodule/lab5/tables.html')
