@@ -1,0 +1,16 @@
+{% extends "layouts/base.html" %}
+{% load static %}
+{% block title %} Search Results {% endblock title %}
+{% block content %}
+<h1>Search Results</h1>
+{% if books %}
+<ul>
+  {% for b in books %}
+    <li><strong>{{ b.title }}</strong> — {{ b.author }}</li>
+  {% endfor %}
+</ul>
+{% else %}
+<p>No books matched your search.</p>
+{% endif %}
+<a href="{% url 'books.search' %}">New search</a>
+{% endblock content %}

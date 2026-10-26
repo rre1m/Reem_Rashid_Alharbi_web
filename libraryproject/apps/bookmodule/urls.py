@@ -14,4 +14,5 @@ urlpatterns = [
     path('aboutus/', views.aboutus, name="books.aboutus"),
     # Lab 3
     path('index2/<int:val1>/', views.index2),
+    path("search", views.search, name="books.search"),
 ]
